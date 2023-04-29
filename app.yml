@@ -1,4 +1,4 @@
-runtime: php55
+runtime: python37
 
 handlers:
 - url: /styles
@@ -9,4 +9,5 @@ handlers:
   upload: images/(.*\.(gif|png|jpg))
   
 - url: /.*
+  static_files: index.html
   script: index.html
